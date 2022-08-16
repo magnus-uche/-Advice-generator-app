@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Epilogue:wght@500;700&family=Inter:wght@400;700&family=Lexend+Deca&family=Manrope:wght@800&family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1.73rem;
+}
+
+body {
+  background-color: var(--Dark-Blue);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+.mobile-divider {
+  display: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 5em auto;
+}
+
+.card {
+  background-color: var(--Dark-Grayish-Blue);
+  margin: 8em auto 3em auto;
+  display: flex;
+  padding: 1em;
+  padding-top: 2em;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 25em;
+  border-radius: 1em;
+}
+
+.title {
+  color: var(--Neon-Green);
+  padding-top: 1em;
+  font-weight: 400;
+  ;
+  letter-spacing: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.advice-text{
+  margin: 0.8em;
+  color: var(--Light-Cyan);
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 35em;
+}
+
+source .mp {
+  width: 100%;
+}
+
+.desktop-divider {
+  max-width: 22em;
+  margin: 0.6em 0em 1.5em 0em;
+}
+
+.card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Neon-Green);
+  padding: 0.9rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 44%;
+  z-index: 0;
+  transform: translateY(-10%);
+}
+
+.card button:hover {
+  background-color: hsl(150, 86%, 77%);
+  box-shadow: 0em 0em 1em var(--Neon-Green);
+
+}
+
+.icon-dice {
+  width: 1.5em; 
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: aliceblue;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 480px){
+  .card{
+    max-width: 22em;
+  }
+
+  .title {
+    color: var(--Neon-Green);
+    font-weight: 400;
+    ;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  #advice{
+    font-size: 1.5rem;
+    margin-top: 0.8em;
+  }
+
+  .desktop-divider {
+    margin: 0.6em 0em 2.5em 0em;
+  }
+
+  .card button{
+    left: 10.8em;
+    padding: 1.5em;
+    transform: translateY(-20%);
+  }
+
+  .icon-dice {
+    width: 2em; 
+  }
+
+}
